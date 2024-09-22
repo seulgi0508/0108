@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생일</title>
+    <style>
+        #a{
+            color: green;
+        }
+        #b{
+            color : red;
+        }
+        #aa{
+            color:blueviolet;
+        }
+        #q{
+            color:rgb(7, 110, 244);
+        }
+        #name{color:purple;
+            background-image: url('sk.jpg');
+        }
+       body{
+       
+        background-size:;
+       }
+       <style>
+          @media screen and (max-width:767px){
+         /*body {background-color: aliceblue;}*/
+      }
+      @media screen and (min-width :768px)and (max-width:959px){
+         /*body {background-color: aliceblue;}*/
+      }
+      @media screen and (min-width:960px){
+       /*body {background-color: aliceblue;}*/
+      }
+        #menu{
+           background: olive;
+        }
+        #menu ul {
+           margin :0;
+           padding : 0;
+           width:900px;
+        }
+        #menu ul li{
+
+           display: inline-block;
+           list-style-type: none;
+           padding: 5px  15px;
+        }
+        #menu ul li a{
+           color : white;
+           text-decoration: none;
+        }
+        #menu ul li a:hover{
+           color:wheat;
+        }
+    </style>
+</head>
+<body>
+    <div id="name">
+    <h1>HAPPY BIRTHDAY TO YOU!🙂</h1> <img src="sk.jpg" alt="" width="100">
+<p>음력 8.20</p>
+</div> 
+지금 시간은?
+<script>
+    var current = new Date;
+    document.write(current.getHours(),"시 ");
+    document.write(current.getMinutes(),"분 ");
+
+    
+  </script>
+     <nav id="menu">
+        <ul>
+            <li><a href="index1.html">HOME</a></li>
+            <li><a href="picture.html">사진첩</a></li>
+            <li><a href="index.html">MAIN</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+
+   
+
+    <br>
+    <br>
+    <br>
+     <p>생일을 축하합니다 ^^</p>
+       <img src="09.PNG" alt="">
+    <div id="aa">
+    <p>현재 대구의 온도</p>
+    </div>
+    <button onclick="getWeather()">🍦</button> 
+    <p id="temperature"></p>
+    <script>
+        function getWeather() {
+            fetch('http://goweather.herokuapp.com/weather/Deagu')
+            .then((response)=>response.json())
+            .then((data)=>{
+                document.getElementById("temperature").innerHTML = data['temperature']
+                
+            });
+        }
+        </script>
+        *모바일에서만 실시간 대구 온도 확인 가능 
+      
+       <br>
+       <br>
+       <hr>
+       <div id="q">
+       <p>날씨를 클릭해보세요.</p></div>
+      <a href="https://search.naver.com/search.naver?where=nexearch&sm=top_sug.pre&fbm=0&acr=1&acq=%EB%8C%80%EA%B5%AC%EB%82%A0%EC%94%A8&qdt=0&ie=utf8&query=%EB%8C%80%EA%B5%AC%EB%82%A0%EC%94%A8"> <img src="5.PNG" alt=""></a>
+        <br>
+          <hr>
+        <div id="b">
+        <p>유튜브</p>
+        <a href="https://www.youtube.com/"><img src="youtube.jpg" alt="" width="100"></a>
+    </div>
+
+
+
+
+  <br>
+
+<br>
+ <br>
+ 
+    
+
+
+    <br>
+
+    <br>
+    <img src="p.jpg" alt="">
+ 
+    <hr>
+
+   개발자 : 권슬기 
+    
+</html>
+
+    
+</head>
+<body>
+    
+</body>
+</html>
